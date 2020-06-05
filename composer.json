@@ -1,0 +1,18 @@
+{
+    "name": "dimitri/php-unit",
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "klopfstein",
+            "email": "dimitri.kft@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Grafikart\\" : "src/"
+        }
+    },
+    "require": {}
+}
