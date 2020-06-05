@@ -2,12 +2,17 @@
 
 namespace Grafikart;
 
-use PHPUnit_Extensions_PhptTestCase;
+use PHPUnit_Framework_TestCase;
 
-class Math extends PHPUnit_Extensions_PhptTestCase
+class MathTest extends PHPUnit_Framework_TestCase
 {
-    public static function testDouble($nombre)
+    public  function testDouble()
     {
-        \Grafikart\Math::double(2);
+        $this->assertEquals(4, \Grafikart\Math::double(2));
+    }
+
+    public  function testDoubleIsZero()
+    {
+        $this->assertEquals(0, \Grafikart\Math::double(0));
     }
 }
